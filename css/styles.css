@@ -1,73 +1,106 @@
-/*Add padding and margin to space out the page.
-Make the font larger too.*/
-body{
-	margin:1%;
-	padding:1%;
-	font-size:150%;
-    border-radius: 20px;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-/*Make the h1 heading bigger with a bold font*/
-h1{
-	font-size: 2em; 
-	font-weight: bold;
+nav li {
+    float: left;
 }
 
-.active{
-	background: white;
-    text-transform: uppercase;
-	text-align: center;
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.active a{
-	text-decoration: none;;
+nav li.active {
+    background-color: #04aa6d;
 }
 
-/*Style the images*/
-img{
-    height: 175px;
-	width:auto;
-    border: 3px dotted blue;
-    padding: 25px;
-    border-radius: 20px;
-    margin: 10px;
+nav li a:hover {
+    background-color: #111;
 }
 
-/*Make the h2 heading match h1*/
-h2{
-	font-size: 2em; 
-	font-weight: bold;
-    border-radius: 20px;
+h1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 60%;
+    line-height: 50px;
+    color: #5c5c5c;
+    margin-left: 50px;
 }
 
-/*Improve the spacing for paragraphs AND headings*/
-p, h1, h2 {
-    padding: 10px;
-    border-radius: 20px;
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    color: #5c108c;
 }
 
-
-/*Add borders around the main components and some
-space too*/
-header, nav, main, footer{
-	border: 3px solid blue;
-	margin: 20px 0;
-    padding: 10px;
-    border-radius: 20px;
+p {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
 }
 
-
-/*Change the styling for all of the list 
-items in the nav section*/
-nav li{
-	background-color: #ECFF4D;
-	padding:10px;
-	width:25%;
-	border:1px solid black;
-	display: inline-block;
-	width: 20%;
-    border-radius: 20px;
+figure {
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
-/*Added this so the links stay the same color*/
-a:visited{color:#0000FF}
+figure :hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 8px 8px goldenrod;
+}
+
+img {
+    display: block;
+    width: 40%;
+    border: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px; /*To make it look better I set the padding to be 0*/
+}
+
+figcaption:hover {
+    transform: scale(1);
+    box-shadow: none;
+}
+
+figcaption {
+    display: block;
+    text-align: center;
+    width: 80%;
+    /* border: 10px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    display: block;
+    border-top: 1px #333 solid;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+footer p {
+    padding: 10px 10px;
+    
+    margin-left: 0px;
+    margin-right: 0px;
+}
