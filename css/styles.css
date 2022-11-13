@@ -1,6 +1,16 @@
 body {
     font-family:  "IBM Plex Sans";
     line-height: 1.2;
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+}
+
+header{
+    grid-column: 1/-1;
+}
+
+main, aside, footer {
+    grid-column: 2/2;
 }
 
 h1 {
@@ -10,7 +20,7 @@ h1 {
     margin-bottom: 30px;
     line-height: 50px;
     color: #5c5c5c;
-    margin-left: 50px;
+    margin: 30px 0 20px 0;
     font-family: "IBM Plex Sans Condensed";
 }
 
@@ -19,14 +29,13 @@ h2 {
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 50px;
+    margin-left: 5%;
     color: #5c108c;
 }
 
 p {
     display: block;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
     margin-bottom: 10px;
 }
     
@@ -104,6 +113,14 @@ footer p {
         background-repeat: no-repeat;
     }
     
+    h2 {
+        margin-left: 2%;
+    }
+
+    p {
+        margin-right: 5%;
+    }
+    
     nav li {
         float: left;
     }
@@ -134,6 +151,33 @@ footer p {
     body {
         animation: 2s ease-in fadeInBackground;
         animation-duration: 2s;
+        grid-template-columns: 10% 10auto 10%;
+    }
+
+    main {
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: 15% 85%;
+    }
+    
+    h1 {
+        grid-column: 1/-1;
+    }
+
+    h2 {
+        margin-top: 0px;
+        grid-column: 1/2;
+    }
+
+    p, aside, footer  {
+        grid-column: 2/3;
+    }
+
+    p {
+        margin-left: 10px;
+    }
+    .intro, figure {
+        grid-column: 1/3;
     }
 }
 
