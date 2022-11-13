@@ -1,51 +1,6 @@
-@keyframes fadeInBackground {
-    from {background-color: #ffff;}
-    to {background-color: #fffa;}
-}
-
 body {
-    background-attachment: fixed;
-    background-image: url("../images/merlion.jpg") ;
-    background-color: #fffa;
-    background-size: cover;
-    background-blend-mode: overlay;
-    height: 100%;
-    background-repeat: no-repeat;
     font-family:  "IBM Plex Sans";
-    animation: fadeInBackground;
-    animation-duration: 2s;
-}
-
-h1 {
-    font-family: "IBM Plex Sans Condensed";
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-nav li {
-    float: left;
-}
-
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav li.active {
-    background-color: #005c39;
-}
-
-nav li a:hover {
-    background-color: #111;
+    line-height: 1.2;
 }
 
 h1 {
@@ -53,10 +8,10 @@ h1 {
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 60%;
     line-height: 50px;
     color: #5c5c5c;
     margin-left: 50px;
+    font-family: "IBM Plex Sans Condensed";
 }
 
 h2 {
@@ -74,36 +29,46 @@ p {
     margin-right: 10%;
     margin-bottom: 10px;
 }
+    
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li.active {
+    background-color: #005c39;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
 figure {
     margin-left: 20%;
     margin-right: 20%;
 }
-
-figure :hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 8px 8px goldenrod;
-}
-
+   
 img {
     display: block;
-    width: 40%;
+    width: 80%;
+    min-width: 200px;
     border: 10px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px; /*To make it look better I set the padding to be 0*/
 }
 
-figcaption:hover {
-    transform: scale(1);
-    box-shadow: none;
-}
-
 figcaption {
     display: block;
     text-align: center;
     width: 80%;
-    /* border: 10px; */
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -125,6 +90,51 @@ footer p {
     
     margin-left: 0px;
     margin-right: 0px;
+}
+
+/* tablet/small laptop */
+@media screen and (min-width: 768px) {
+    body {
+        background-attachment: fixed;
+        background-image: url("../images/merlion.jpg") ;
+        background-color: #fffa;
+        background-size: cover;
+        background-blend-mode: overlay;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    nav li {
+        float: left;
+    }
+}
+
+/* big laptop/desktop */
+@media screen and (min-width: 1024px) {
+    @keyframes fadeInBackground {
+        from {background-color: #ffff;}
+        to {background-color: #fffa;}
+    }
+
+    body {
+        animation: 2s ease-in fadeInBackground;
+        animation-duration: 2s;
+    }
+
+    nav li a:hover {
+        background-color: #111;
+    }
+    
+    
+    figure :hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 8px 8px goldenrod;
+    }
+    
+    figcaption:hover {
+        transform: scale(1);
+        box-shadow: none;
+    }
 }
 
 @media (prefers-reduced-motion) {
