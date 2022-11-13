@@ -97,7 +97,7 @@ footer p {
     body {
         background-attachment: fixed;
         background-image: url("../images/merlion.jpg") ;
-        background-color: #fffa;
+        background-color: #fffd;
         background-size: cover;
         background-blend-mode: overlay;
         height: 100%;
@@ -128,7 +128,7 @@ footer p {
 @media screen and (min-width: 1024px) {
     @keyframes fadeInBackground {
         from {background-color: #ffff;}
-        to {background-color: #fffa;}
+        to {background-color: #fffd;}
     }
 
     body {
@@ -140,6 +140,6 @@ footer p {
 @media (prefers-reduced-motion) {
     body {
         animation: none;
-        background-color: #fffa;
+        background-color: #fffd;
     }
 }
