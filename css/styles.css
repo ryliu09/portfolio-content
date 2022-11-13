@@ -6,6 +6,12 @@ body {
     background-blend-mode: overlay;
     height: 100%;
     background-repeat: no-repeat;
+
+    font-family:  "IBM Plex Sans";
+}
+
+h1 {
+    font-family: "IBM Plex Sans Condensed";
 }
 
 nav ul {
