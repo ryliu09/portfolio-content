@@ -1,3 +1,8 @@
+@keyframes fadeInBackground {
+    from {background-color: #ffff;}
+    to {background-color: #fffa;}
+}
+
 body {
     background-attachment: fixed;
     background-image: url("../images/merlion.jpg") ;
@@ -6,8 +11,9 @@ body {
     background-blend-mode: overlay;
     height: 100%;
     background-repeat: no-repeat;
-
     font-family:  "IBM Plex Sans";
+    animation: fadeInBackground;
+    animation-duration: 2s;
 }
 
 h1 {
@@ -119,4 +125,11 @@ footer p {
     
     margin-left: 0px;
     margin-right: 0px;
+}
+
+@media (prefers-reduced-motion) {
+    body {
+        animation: none;
+        background-color: #fffa;
+    }
 }
