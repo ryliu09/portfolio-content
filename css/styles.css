@@ -107,20 +107,7 @@ footer p {
     nav li {
         float: left;
     }
-}
-
-/* big laptop/desktop */
-@media screen and (min-width: 1024px) {
-    @keyframes fadeInBackground {
-        from {background-color: #ffff;}
-        to {background-color: #fffa;}
-    }
-
-    body {
-        animation: 2s ease-in fadeInBackground;
-        animation-duration: 2s;
-    }
-
+    
     nav li a:hover {
         background-color: #111;
     }
@@ -134,6 +121,19 @@ footer p {
     figcaption:hover {
         transform: scale(1);
         box-shadow: none;
+    }
+}
+
+/* big laptop/desktop */
+@media screen and (min-width: 1024px) {
+    @keyframes fadeInBackground {
+        from {background-color: #ffff;}
+        to {background-color: #fffa;}
+    }
+
+    body {
+        animation: 2s ease-in fadeInBackground;
+        animation-duration: 2s;
     }
 }
 
