@@ -13,6 +13,21 @@ main, aside, footer {
     grid-column: 2/2;
 }
 
+.skip-to-content-link {
+    background: white;
+    height: 20px;
+    left: 20px;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+  
+.skip-to-content-link:focus {
+transform: translateY(0%);
+}
+
 h1 {
     font-size: 45px;
     font-weight: bold;
