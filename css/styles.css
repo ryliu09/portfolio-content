@@ -28,6 +28,21 @@ main, aside, footer {
 transform: translateY(0%);
 }
 
+.go-random-link {
+    background: white;
+    height: 20px;
+    left: 80px;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+  
+.go-random-link:focus {
+transform: translateY(0%);
+}
+
 h1 {
     font-size: 45px;
     font-weight: bold;
