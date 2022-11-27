@@ -33,12 +33,16 @@ h2 {
     color: #5c108c;
 }
 
-p {
+p, aside {
     display: block;
     margin-left: 5%;
     margin-bottom: 10px;
 }
     
+aside {
+    font-style: italic;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -48,6 +52,7 @@ nav ul {
 }
 
 nav li.active {
+    text-decoration: underline wavy white;
     background-color: #005c39;
 }
 
